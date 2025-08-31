@@ -1,0 +1,136 @@
+/* ===== General Styles ===== */
+body {
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background: gray;
+  color: white;
+  padding: 20px;
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* ===== Status Box ===== */
+.status {
+  margin: 20px auto;
+  max-width: 400px;
+  border: 2px solid #0077cc;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #333;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Video Section ===== */
+.container {
+  margin: 20px auto;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.video-feed {
+  width: 100%;
+  max-width: 600px;
+  border: 8px solid #333;
+  border-radius: 12px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Guidelines Section ===== */
+.req {
+  margin: 30px auto;
+  max-width: 90%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.req h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+/* ===== Table Styling ===== */
+#gesture-table table {
+  width: 100%;
+  min-width: 500px; /* Prevents table from collapsing too much on small screens */
+  border-collapse: collapse;
+  text-align: left;
+}
+
+#gesture-table th,
+#gesture-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#gesture-table thead {
+  background-color: #333;
+  color: white;
+}
+
+#gesture-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#gesture-table tr:hover {
+  background-color: #e6f7ff;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .status {
+    max-width: 90%;
+    font-size: 1rem;
+  }
+
+  .video-feed {
+    max-width: 100%;
+  }
+
+  #gesture-table table {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+    padding: 15px;
+  }
+
+  .req {
+    padding: 15px;
+  }
+
+  #gesture-table table {
+    min-width: 350px;
+  }
+
+  #gesture-table th,
+  #gesture-table td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
